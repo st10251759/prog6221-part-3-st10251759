@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ST10251759_PROG6221_POE_P3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Welcome" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="71*"/>
+            <ColumnDefinition Width="729*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="433" VerticalAlignment="Center" Width="805" Source="/tasty-pizza-near-ingredients.jpg" Stretch="UniformToFill" Grid.ColumnSpan="2"/>
+        <Label Content="My Recipe App" HorizontalAlignment="Left" Margin="258,91,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift Light Condensed" FontSize="36" FontWeight="Bold" Foreground="#FFD16009" Grid.Column="1"/>
+        <Label Content="Welcome" HorizontalAlignment="Left" Margin="192,130,0,0" VerticalAlignment="Top" Foreground="#FF7F0000" FontFamily="Ink Free" FontSize="90" Grid.Column="1"/>
+        <Button x:Name="btnGetStarted" Content="Get Started &gt;&gt;&gt;" HorizontalAlignment="Left" Margin="252,251,0,0" VerticalAlignment="Top" Background="#FFCE5E08" BorderBrush="#FFCBC3C3" Foreground="#FFDBD5D9" Width="188" Height="37" FontFamily="Bahnschrift SemiLight Condensed" FontSize="26" Click="Button_Click" Grid.Column="1"/>
+
     </Grid>
 </Window>

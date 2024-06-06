@@ -24,5 +24,12 @@ namespace ST10251759_PROG6221_POE_P3
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            AddRecipe add = new AddRecipe();
+            add.Show();
+            this.Close();
+        }
     }
 }
