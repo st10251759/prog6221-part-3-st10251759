@@ -74,6 +74,9 @@
     <Compile Include="ViewFilter.xaml.cs">
       <DependentUpon>ViewFilter.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewRecipe.xaml.cs">
+      <DependentUpon>ViewRecipe.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddIngredient.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -117,6 +120,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewFilter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewRecipe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
