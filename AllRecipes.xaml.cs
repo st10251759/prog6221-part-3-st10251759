@@ -31,6 +31,7 @@ namespace ST10251759_PROG6221_POE_P3
         public AllRecipes()
         {
             InitializeComponent();
+
             // create new instance of addSteps class to retrieve the list of recipes
             AddSteps recipe = new AddSteps();
             recipes = recipe.GetRecipes();

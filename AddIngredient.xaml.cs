@@ -24,16 +24,7 @@ namespace ST10251759_PROG6221_POE_P3
         List<FoodGroup> groups = new List<FoodGroup>();
         // list to store food groups in enum
 
-        static private int unit;
-        static private int group;
-        static private string ingredientName;
-        static private double quantity;
-        static private double numCalories;
-
-        public static int totalNumIngredients = 0;
-        public static int numIngredients;
-
-        Ingredient ingredient;
+        
 
         public void populateComboBox()
         {
@@ -76,6 +67,17 @@ namespace ST10251759_PROG6221_POE_P3
             populateComboBox();// populate the combo boxes when the window is created
             totalNumIngredients = 0;
         }
+
+        static private int unit;
+        static private int group;
+        static private string ingredientName;
+        static private double quantity;
+        static private double numCalories;
+
+        public static int totalNumIngredients = 0;
+        public static int numIngredients;
+
+        Ingredient ingredient;
 
         private void AddIngredient_Clicked(object sender, RoutedEventArgs e)
         {
