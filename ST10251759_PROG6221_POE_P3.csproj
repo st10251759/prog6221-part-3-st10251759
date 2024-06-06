@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="FoodGroup.cs" />
+    <Compile Include="Ingredient.cs" />
+    <Compile Include="UnitOfMeasurement.cs" />
     <Page Include="AddIngredient.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

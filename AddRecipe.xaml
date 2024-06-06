@@ -10,10 +10,10 @@
         <Image HorizontalAlignment="Center" Height="450" VerticalAlignment="Top" Width="800" Source="/tasty-pizza-near-ingredients.jpg" Stretch="UniformToFill"/>
         <DockPanel LastChildFill="False" Margin="0,0,0,-19">
 
-            <StackPanel Background="#FF1A1A1A" Margin="30,3,30,30" Width="728" Height="393">
+            <StackPanel Margin="30,3,30,30" Width="728" Height="393" Background="#FF1A1A1A">
 
-                <TextBlock Text="Add Recipe" FontSize="35" TextAlignment="Center" DockPanel.Dock="Top" Height="50" Width="200" 
-                FontWeight="Bold" Margin="25,10,25,0" Foreground="White"/>
+                <TextBlock Text="Add Recipe Details" FontSize="35" TextAlignment="Center" DockPanel.Dock="Top" Height="50" Width="331" 
+                FontWeight="Bold" Margin="25,10,25,0" Foreground="#FFA45E0B"/>
 
                 <Label x:Name="NameLabel" Content="Please enter the recipe name:" FontSize="25"  DockPanel.Dock="Top" Height="40" Width="350"
             HorizontalAlignment="Left" Margin="25,0,0,0" Foreground="White" />

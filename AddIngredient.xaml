@@ -7,6 +7,45 @@
         mc:Ignorable="d"
         Title="AddIngredient" Height="450" Width="800">
     <Grid>
-        
+        <Image Height="433" VerticalAlignment="Center" Source="/tasty-pizza-near-ingredients.jpg" Stretch="UniformToFill"/>
+
+        <DockPanel LastChildFill="False" Margin="0,0,0,-19">
+
+            <StackPanel Background="#FF1A1A1A" Margin="30,5,30,30" Width="728" Height="393">
+
+                <TextBlock x:Name="AddIngredienttxt" Text="Add Ingredient" FontSize="35" TextAlignment="Center" DockPanel.Dock="Top" Height="50" Width="275" 
+                FontWeight="Bold" Margin="25,10,25,0" Foreground="#FFA45E0B" />
+                <Label x:Name="NameLabel" Content="Please enter the ingredient name:" FontSize="25"  DockPanel.Dock="Top" Height="40" Width="385"
+            HorizontalAlignment="Left" Margin="25,0,0,0" Foreground="White" />
+                <TextBox x:Name="ingredientNametxt" Height="40" Width="675" DockPanel.Dock="Left" FontSize="25" Margin="0,0,0,0"/>
+
+                <StackPanel Orientation="Vertical" Background="#FF1A1A1A" Height="186" Width="674" Margin="0,10,0,0">
+
+
+                    <Label Content="Please enter the quantity of this ingredient:" FontSize="20" Foreground="White" 
+                    Height="35" Width="400" HorizontalAlignment="Left"></Label>
+                    <TextBox x:Name="quantitytxt" Height="35" Width="100" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="200,-35,0,0" FontSize="20" Background="White" Foreground="Black"></TextBox>
+
+                    <Label Content="Please select Unit of Measurment:" FontSize="20" Foreground="White" HorizontalAlignment="Left" Height="35" Width="315" Margin="0,10,0,5"></Label>
+                    <ComboBox x:Name="cmbUnit"  Height="35" Width="350" Margin="325,-35,0,0" Background="White" Foreground="Black"></ComboBox>
+
+                    <Label Content="Please enter the number of calories in this ingredient:" FontSize="20" Foreground="White" 
+                    Height="35" Width="500" HorizontalAlignment="Left" Margin="0,10,0,0"></Label>
+                    <TextBox x:Name="numCaloriestxt" FontSize="20" Height="35" Width="100" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="200,-35,0,0" Background="White" Foreground="Black"></TextBox>
+
+
+
+                    <Label Content="Please select Food Group:" FontSize="20" Foreground="White" Height="35" Width="250" HorizontalAlignment="Left"></Label>
+                    <ComboBox x:Name="cmbGroup" Height="35" Width="350" Margin="325,-25,0,0" Background="white" Foreground="Black"></ComboBox>
+
+                </StackPanel>
+                <Button x:Name="btnAddIngredient" Click="AddIngredient_Clicked" Content="Add Ingredient" FontSize="25" Height="40" Width="300" HorizontalAlignment="Right" 
+                 Margin="0,2,25,0" Foreground="White" Background="#FFA45E0B"></Button>
+            </StackPanel>
+
+            <!--</StackPanel>-->
+
+
+        </DockPanel>
     </Grid>
 </Window>
