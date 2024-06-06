@@ -7,6 +7,30 @@
         mc:Ignorable="d"
         Title="AddRecipe" Height="450" Width="800">
     <Grid>
-        
+        <Image HorizontalAlignment="Center" Height="450" VerticalAlignment="Top" Width="800" Source="/tasty-pizza-near-ingredients.jpg" Stretch="UniformToFill"/>
+        <DockPanel LastChildFill="False" Margin="0,0,0,-19">
+
+            <StackPanel Background="#FF1A1A1A" Margin="30,3,30,30" Width="728" Height="393">
+
+                <TextBlock Text="Add Recipe" FontSize="35" TextAlignment="Center" DockPanel.Dock="Top" Height="50" Width="200" 
+                FontWeight="Bold" Margin="25,10,25,0" Foreground="White"/>
+
+                <Label x:Name="NameLabel" Content="Please enter the recipe name:" FontSize="25"  DockPanel.Dock="Top" Height="40" Width="350"
+            HorizontalAlignment="Left" Margin="25,0,0,0" Foreground="White" />
+                <TextBox x:Name="recipeNametxt" Height="40" Width="675" DockPanel.Dock="Left" FontSize="25"/>
+
+                <Label x:Name="NumIngredientsLabel" Content="Please enter the number of ingredients in the recipe:" FontSize="25"  DockPanel.Dock="Top" Height="50" 
+            HorizontalAlignment="Left" Margin="25,30,0,0" Foreground="White" />
+                <TextBox x:Name="NumIngredientstxt" Height="40" Width="75" Margin="0,-50,-600,0" FontSize="25" ></TextBox>
+
+                <Label x:Name="NumStepsLabel" Content="Please enter the number of ingredients in the recipe:" FontSize="25"  DockPanel.Dock="Top" Height="50" 
+            HorizontalAlignment="Left" Margin="25,30,0,0" Foreground="White" />
+                <TextBox x:Name="NumStepstxt" Height="40" Width="75" FontSize="25" Margin="0,-50,-600,0"/>
+
+                <Button x:Name="btnAddRecipe" Height="50" Width="200" Content="Add Recipe" FontSize="25" Background="#FFA45E0B" Foreground="White"
+                 Click="AddRecipe_Clicked" Margin="475,15,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+        </DockPanel>
+
     </Grid>
 </Window>
