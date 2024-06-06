@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="FoodGroup.cs" />
     <Compile Include="Ingredient.cs" />
+    <Compile Include="Recipe.cs" />
     <Compile Include="UnitOfMeasurement.cs" />
     <Page Include="AddIngredient.xaml">
       <SubType>Designer</SubType>
