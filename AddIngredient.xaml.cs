@@ -79,7 +79,72 @@ namespace ST10251759_PROG6221_POE_P3
 
         private void AddIngredient_Clicked(object sender, RoutedEventArgs e)
         {
+            // create new instance of addRecipe class to retrieve the number of ingredients in the recipe
+            AddRecipe recipe = new AddRecipe();
+            numIngredients = recipe.getNumIngredients();
 
-        }
-    }
-}
+            // get the unit of measurment and food group from user selection 
+            unit = cmbUnit.SelectedIndex;
+            group = cmbGroup.SelectedIndex;
+
+            // get the name of ingredient from the user
+            ingredientName = ingredientNametxt.Text;
+            if (ingredientName == null)// check that the name of ingredient is not null
+            { throw new Exception("Name of ingredient can not be null"); }
+
+            // get the quantity of the ingredient from the user
+            double? checkQuantity = double.Parse(quantitytxt.Text);
+            if (checkQuantity == null) // check that the quantity of ingredient is not null
+            { throw new Exception("Quantity of ingredients can not be null"); }
+
+            quantity = checkQuantity.Value;
+            if (quantity <= 0) // check that the ingredient quantity is greater than 0
+            { throw new Exception("Quantity of ingredients must be greater than 0"); }
+
+            // get the number of calories in the ingredient from the user
+            double? checkNumCalories = double.Parse(numCaloriestxt.Text);
+            if (checkNumCalories == null) // check that the number of calories is not null
+            { throw new Exception("Quantity of ingredients can not be null"); }
+
+            numCalories = checkNumCalories.Value;
+            if (numCalories <= 0)// check that the number of calories is greater than 0
+            { throw new Exception("Number of calories in ingredients must be greater than 0"); }
+
+
+            // create new ingredient with user input
+            ingredient = new Ingredient(ingredientName, quantity, unit, numCalories, group);
+            ingredients.Add(ingredient);// add new ingredient to list of ingredients
+
+            totalNumIngredients++; // increment the total number of ingredients
+
+            // show window tho confirm that ingredient was added successfully
+            SuccessfulAdd added = new SuccessfulAdd();
+            added.Addedtxt.Text = "Ingredient Added Successfully";
+            added.btnAddNewRecipe.IsEnabled = false;
+            added.btnShowAll.IsEnabled = false;
+
+            added.Show();
+
+            AddIngredienttxt.Text = "Add Ingredient " + (totalNumIngredients + 1);
+            quantitytxt.Text = "0";
+            numCaloriestxt.Text = "0";
+            ingredientNametxt.Clear();
+
+            AddSteps step = new AddSteps();
+
+            if (totalNumIngredients == numIngredients)
+            // if the number of ingredients in the recipe is reached then close this window and display the add steps window
+            {
+                this.Hide();
+                step.Show();
+            }
+
+        }// end add ingredient clicked method
+
+        static List<Ingredient> ingredients = new List<Ingredient>();
+
+        public List<Ingredient> GetIngredients()
+        { return ingredients; }// getter method
+
+    }// end add ingredient class
+}// end namespace
