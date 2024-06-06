@@ -58,6 +58,9 @@
     <Compile Include="AddSteps.xaml.cs">
       <DependentUpon>AddSteps.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AllRecipes.xaml.cs">
+      <DependentUpon>AllRecipes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FoodGroup.cs" />
     <Compile Include="Ingredient.cs" />
     <Compile Include="Recipe.cs" />
@@ -74,6 +77,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AddSteps.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AllRecipes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
