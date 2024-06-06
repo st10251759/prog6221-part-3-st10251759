@@ -20,7 +20,7 @@ namespace ST10251759_PROG6221_POE_P3
     public partial class AddSteps : Window
     {
         List<string> steps = new List<string>();
-        private string? step;
+        private string step;
         List<Ingredient> ingredients = new List<Ingredient>();
 
         static List<Recipe> recipes = new List<Recipe>();

@@ -24,7 +24,7 @@ namespace ST10251759_PROG6221_POE_P3
     {
         List<Recipe> recipes = new List<Recipe>();
         private int selection;
-        private static string? name = null;
+        private static string name = null;
         List<int> numIngredients = new List<int>();
         List<Ingredient> ingredients = new List<Ingredient>();
 

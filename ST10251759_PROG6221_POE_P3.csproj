@@ -61,6 +61,9 @@
     <Compile Include="AllRecipes.xaml.cs">
       <DependentUpon>AllRecipes.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Filter.xaml.cs">
+      <DependentUpon>Filter.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FoodGroup.cs" />
     <Compile Include="Ingredient.cs" />
     <Compile Include="Recipe.cs" />
@@ -68,6 +71,9 @@
       <DependentUpon>SuccessfulAdd.xaml</DependentUpon>
     </Compile>
     <Compile Include="UnitOfMeasurement.cs" />
+    <Compile Include="ViewFilter.xaml.cs">
+      <DependentUpon>ViewFilter.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddIngredient.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -81,6 +87,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AllRecipes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Filter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -103,6 +113,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="SuccessfulAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewFilter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

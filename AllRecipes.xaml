@@ -13,16 +13,16 @@
 
             <StackPanel Orientation="Horizontal" Background="Black" DockPanel.Dock="Left" Height="400" Width="200" Margin="15,0,0,0">
                 <Button x:Name="btnAdd" Content="Add Recipe" Height="45" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center"
-                Click="Add_Clicked" Background="DarkRed" Foreground="White" FontSize="25" Margin="20,-225,0,0"></Button>
+                Click="Add_Clicked" Background="#FFDF7629" Foreground="White" FontSize="25" Margin="20,-225,0,0" AutomationProperties.IsRequiredForForm="True"></Button>
                 <Button x:Name="btnFilter" Content="Filter Recipes" Height="45" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center"
-                Click="Filter_Clicked" Background="DarkRed" Foreground="White" FontSize="25" Margin="-160,0,0,0"></Button>
+                Click="Filter_Clicked" Background="#FFDF7629" Foreground="White" FontSize="25" Margin="-160,0,0,0"></Button>
                 <Button x:Name="btnExit" Content="EXIT" Height="45" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center"
-                Click="Exit_Clicked" Background="DarkRed" Foreground="White" FontSize="25" Margin="-160,225,0,0"></Button>
+                Click="Exit_Clicked" Background="#FFDF7629" Foreground="White" FontSize="25" Margin="-160,225,0,0"></Button>
             </StackPanel>
 
             <StackPanel x:Name="ItemsPanel" Margin="15" Height="400" Width="550" Background="Black" >
                 <ListBox x:Name="lbxRecipes" Height="315" Width="500" Background="Black" Foreground="White"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="7,20,7,25" FontSize="25"></ListBox>
-                <Button x:Name="btnView" Content="View Recipe" FontSize="25" Height="40" Width="200" Foreground="White" Background="DarkRed" HorizontalAlignment="Right" 
+                <Button x:Name="btnView" Content="View Recipe" FontSize="25" Height="40" Width="200" Foreground="White" Background="#FFDF7629" HorizontalAlignment="Right" 
                 Margin="0,-10,25,0" Click="View_Clicked"></Button>
             </StackPanel>
         </DockPanel>
